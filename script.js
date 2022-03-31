@@ -1,13 +1,11 @@
-jQuery(function($){
-	// var current;
-	$.scrollify({
-		section:'.box',
-		setHeights:false,
-        overflowScroll:true,
-        updateHash: false,
-        
-	});
+$.scrollify({
+    section:'.box',
+    setHeights:false,
+    overflowScroll:true,
+    updateHash: false,
+    
 });
+
 
 $('a[href^="#"]').click(function() {
     let speed = 400;
