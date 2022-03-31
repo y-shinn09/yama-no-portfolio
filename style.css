@@ -1,0 +1,247 @@
+body {
+  background-color: #f2f2f2;
+  color: #ee9735;
+  font-family: "メイリオ", Meiryo, Verdana, Roboto, "Droid Sans", "游ゴシック",
+    YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+    "ＭＳ Ｐゴシック", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.sub__title {
+  text-align: center;
+  padding: 8vh 0;
+}
+.sub__title h2 {
+  font-size: 6.5vh;
+}
+
+h3 {
+  font-size: 3.6vh;
+  margin: 3vh auto;
+  text-align: center;
+  letter-spacing: 3px;
+}
+section {
+  padding: 10vh 8vh;
+  height: 80vh;
+  margin: auto;
+}
+img {
+  width: 100%;
+}
+/**header**/
+.header {
+  max-width: 1400px;
+  height: 7vh;
+  font-size: 3.6vh;
+  margin: auto;
+  position: relative;
+  z-index: 6;
+}
+.header__inner {
+  max-width: 1400px;
+  width: 100%;
+  height: 7vh;
+  padding: 1vh 54px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: #f2f2f2;
+}
+.title {
+  padding: 0.8vh 20px;
+  border: 3px solid #ee9735;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.nav {
+  display: flex;
+  font-size: 3.6vh;
+  font-weight: bold;
+}
+.nav li {
+  margin-right: 5vh;
+  line-height: 7vh;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
+
+/**main**/
+.main {
+  max-width: 1400px;
+  width: 100%;
+  padding: 1.5vh 50px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #f2f2f2;
+}
+.main__frame {
+  max-width: 1300px;
+  width: 100%;
+  height: 80vh;
+  border: 5px solid #ee9735;
+  border-radius: 15px;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  right: 0;
+}
+
+.main__frame::after {
+  content: "";
+  width: 1400px;
+  height: 10vh;
+  top: -10.5vh;
+  background-color: #f2f2f2;
+  position: absolute;
+  z-index: 2;
+}
+.main__frame::before {
+  content: "";
+  width: 1400px;
+  height: 10vh;
+  bottom: -10.5vh;
+  background-color: #f2f2f2;
+  position: absolute;
+  z-index: 2;
+}
+
+/**fv**/
+
+#fv {
+  max-width: 1400px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.fv__con {
+  width: 100%;
+  text-align: center;
+  height: 80vh;
+  position: relative;
+}
+.fv__cutbox {
+  width: 62%;
+  height: 80vh;
+  right: 0;
+  position: absolute;
+  border-radius: 0 15px 15px 0;
+}
+.fv__cutbox img {
+  height: 100%;
+}
+
+.fv__con .title {
+  display: inline-block;
+  font-size: 10vh;
+  color: #f7f7f7;
+  border: 5px solid #f7f7f7;
+  outline: 5px solid #ee9735;
+  padding: 6.5vh 2.4vh;
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  top: 50%;
+  left: 50%;
+  -webkit-text-stroke: 2px #ee9735;
+}
+
+/**service**/
+#service {
+  margin: auto;
+}
+.list__box {
+  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.list__item {
+  width: 30%;
+}
+.list__item:nth-child(n + 4) {
+  margin-top: 50px;
+}
+.img__box {
+  background-color: #ee9735;
+  width: 25vh;
+  height: 18vh;
+  margin: auto;
+}
+.list__item p {
+  width: 100%;
+  font-size: 2vh;
+  letter-spacing: 1px;
+  line-height: 3vh;
+  margin: auto;
+}
+
+/**works**/
+.works__img {
+  width: 100%;
+  height: auto;
+}
+.works__link {
+  margin-top: 10vh;
+  display: block;
+  text-align: right;
+}
+
+/**about**/
+#about {
+  height: 98vh;
+}
+.about__inner {
+  padding: 50px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.about__img {
+  width: 250px;
+  height: 250px;
+}
+.about__img img {
+    border-radius: 15px;
+}
+.about__list {
+  width: 50%;
+}
+.about__item {
+    width: 100%;
+  padding: 15px;
+  font-size: 24px;
+  margin-bottom: 30px;
+  border-bottom: 2px dotted #ee9735;
+  display: flex;
+}
+.about__title {
+    width: 30%;
+    font-weight: bold;
+  }
+.inside {
+    font-size: 2vh;
+    margin-left: 2vh;
+}
+/**footer**/
+.footer {
+  background-color: #ee9735;
+  text-align: center;
+  /* height: 80px; */
+  height: 7.5vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+.footer p {
+  display: block;
+  color: #fff;
+  width: 100%;
+  padding-top: 30px;
+}
